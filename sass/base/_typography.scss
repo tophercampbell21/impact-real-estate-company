@@ -1,0 +1,52 @@
+.main-content {
+  &__title {
+    &--main {
+      font-size: 4.8rem;
+    }
+
+    &--support {
+      font-size: 1.8rem;
+    }
+
+    &--support-f {
+      font-size: 1.8rem;
+      color: #fff;
+    }
+  }
+}
+
+.autoplay {
+  max-width: 40rem;
+  color: var(--color-green-tert-2);
+}
+
+.heading-secondary {
+  font-size: 3.6rem;
+  font-weight: 500;
+}
+
+.heading-tertiary {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.section {
+  &__sub-header {
+    color: var(--color-green-tert-3);
+    text-transform: uppercase;
+  }
+
+  &__main-header {
+    color: var(--color-blue-dark-1);
+  }
+}
+
+.p-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.card-header {
+  text-transform: uppercase;
+  font-weight: 600;
+}

@@ -1,0 +1,13 @@
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    visibiliy: hidden;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0);
+  }
+}

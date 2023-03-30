@@ -1,0 +1,230 @@
+.section-about-us-hero__grid {
+  max-width: 75vw;
+  margin: 15rem auto 9.6rem;
+  align-items: center;
+  gap: 9.6rem;
+  grid-template-rows: none;
+
+  &-title {
+    &--text {
+      line-height: 1.8;
+    }
+  }
+
+  &-image {
+    height: 45vh;
+    background-image: url(../Media/fixer-upper-house-bg1.jpg);
+    background-size: cover;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+  }
+}
+
+.section-process {
+  max-width: 75vw;
+  margin: 0 auto;
+
+  &__grid-gridbox--title {
+    position: relative;
+    font-size: 2.4rem;
+  }
+
+  &__grid-gridbox--title > span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(0%, -50%);
+    font-size: 10rem;
+    color: var(--color-green-tert-3);
+    opacity: 0.2;
+    z-index: -1;
+  }
+
+  &__grid-gridbox--text {
+    line-height: 1.8;
+    margin-top: 1.8rem;
+  }
+}
+
+.section-benefits {
+  @include section-spacing;
+
+  &__benefits-list {
+    list-style-type: none;
+    grid-template-rows: repeat(2, 1fr);
+
+    &--item {
+      padding: 2.4rem;
+      background-color: rgba(116, 198, 157, 0.3);
+      border-radius: 4px;
+
+      &__icon {
+        font-size: 3rem;
+      }
+
+      &__title {
+        margin-top: 1.6rem;
+        font-size: 1.8rem;
+      }
+
+      &__text {
+        line-height: 1.8;
+      }
+    }
+  }
+}
+
+.section-move {
+  width: 100%;
+  padding: 4.8rem 0;
+  background-image: radial-gradient(
+    farthest-corner at 4rem 4rem,
+    var(--color-blue-dark-1) 0%,
+    var(--color-blue-dark-3) 100%
+  );
+  position: relative;
+  overflow: hidden;
+
+  &__content {
+    max-width: 75vw;
+    margin: 0 auto;
+    grid-template-rows: none !important;
+
+    &-text {
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+
+      &--subheader {
+        text-transform: uppercase;
+        margin-bottom: -2rem;
+        color: var(--color-blue-light-3);
+      }
+
+      &--text {
+        line-height: 1.8;
+      }
+    }
+
+    &-image {
+      position: absolute;
+      right: 25rem;
+      top: 50%;
+      transform: translateY(-50%) scale(1.6);
+
+      &--icon {
+        font-size: 50rem;
+        color: var(--color-blue-light-2);
+      }
+    }
+  }
+}
+
+.section-service-areas {
+  max-width: 75vw;
+  margin: 0 auto;
+
+  &__grid {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0;
+    position: relative;
+
+    &-header {
+      text-transform: uppercase;
+      font-size: 3rem;
+      letter-spacing: 2px;
+    }
+
+    &--box {
+      height: 30rem;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s ease-out;
+      background-position: center center;
+      overflow: hidden;
+
+      &:hover > .section-service-areas__grid-header {
+        transition: all 0.3s ease-out;
+        transform: scale(1.1);
+      }
+
+      &:hover {
+        transition: all 0.3s ease-out;
+        transform: scale(1.15, 1.15);
+      }
+
+      &__bo {
+        background-image: radial-gradient(
+            circle at center,
+            (rgba(0, 0, 0, 0.6)) 30%,
+            (rgba(0, 0, 0, 0.1))
+          ),
+          url(../Media/boerne.jpg);
+
+        background-size: cover;
+      }
+
+      &__sa {
+        background-image: radial-gradient(
+            circle at center,
+            (rgba(0, 0, 0, 0.6)) 30%,
+            (rgba(0, 0, 0, 0.1))
+          ),
+          url(../Media/riverwalk.png);
+        background-size: cover;
+      }
+
+      &__nb {
+        background-image: radial-gradient(
+            circle at center,
+            (rgba(0, 0, 0, 0.6)) 30%,
+            (rgba(0, 0, 0, 0.1))
+          ),
+          url(../Media/new-braunfels.jpg);
+        background-size: cover;
+        transition: all 0.3s;
+      }
+
+      &__sg {
+        background-image: radial-gradient(
+            circle at center,
+            (rgba(0, 0, 0, 0.6)) 30%,
+            (rgba(0, 0, 0, 0.1))
+          ),
+          url(../Media/seguin.jpeg);
+        background-size: cover;
+      }
+
+      &__sb {
+        background-image: radial-gradient(
+            circle at center,
+            (rgba(0, 0, 0, 0.6)) 30%,
+            (rgba(0, 0, 0, 0.1))
+          ),
+          url(../Media/spring-branch.jpg);
+        background-size: cover;
+      }
+
+      &__bv {
+        background-image: radial-gradient(
+            circle at center,
+            (rgba(0, 0, 0, 0.6)) 30%,
+            (rgba(0, 0, 0, 0.1))
+          ),
+          url(../Media/bulverde.jpeg);
+        background-size: cover;
+      }
+    }
+  }
+}
+
+.section-assistance {
+  max-width: 75vw;
+  margin: 0 auto;
+  line-height: 1.8;
+}

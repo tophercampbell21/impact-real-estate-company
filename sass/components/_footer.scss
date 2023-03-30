@@ -1,0 +1,71 @@
+.footer {
+  background-image: linear-gradient(rgba(1, 42, 74, 0.8), rgba(1, 42, 74, 0.8)),
+    url(../Media/alamo.jpg);
+  background-size: cover;
+  padding: 9.6rem 0;
+  margin-top: 4.8rem;
+
+  &__grid {
+    max-width: 75vw;
+    margin: 0 auto;
+    grid-template-columns: 1fr 2fr 2.5fr;
+
+    &--grid-box {
+      &__header {
+        color: #fff;
+      }
+
+      &:nth-child(2) {
+        border-right: 2px solid #eee;
+      }
+
+      &__list {
+        list-style: none;
+
+        &--item {
+          color: #fff;
+          transition: all 0.2s;
+
+          &:not(:last-child) {
+            margin-bottom: 1.2rem;
+          }
+
+          &:hover {
+            transform: translateX(3px);
+          }
+
+          &__link {
+            &:link,
+            &:visited {
+              color: #fff;
+              text-decoration: none;
+            }
+          }
+
+          &__address--biz {
+            display: block;
+            font-weight: 600;
+            font-size: 2rem;
+            margin-bottom: 0.8rem;
+          }
+
+          &__social-box {
+            display: flex;
+            margin-top: 2.4rem;
+            gap: 2.4rem;
+            align-items: center;
+
+            &__icon {
+              color: #fff;
+              font-size: 4rem;
+
+              &:last-child {
+                font-size: 6rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2.4rem;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 9.6rem;
+}
+
+.section-process__grid {
+  &-gridbox {
+    &--title {
+      font-size: 2rem;
+    }
+  }
+}
