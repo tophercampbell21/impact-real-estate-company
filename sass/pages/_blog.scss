@@ -1,0 +1,227 @@
+.section-blog {
+  &__top {
+    height: 90vh;
+    width: 100%;
+    position: relative;
+
+    &-video {
+      width: 100%;
+      height: 100%;
+
+      &--vid {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      &--overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 90vh;
+        width: 100%;
+        z-index: 2;
+        background-image: linear-gradient(
+          to right bottom,
+          transparent,
+          rgba(0, 0, 0, 0.4)
+        );
+      }
+    }
+
+    &-title {
+      position: absolute;
+      top: 70%;
+      right: 3%;
+      width: 45%;
+      z-index: 5;
+
+      &--sub-heading {
+        color: var(--color-green-tert-3);
+        text-transform: uppercase;
+      }
+
+      &--heading {
+        color: #fff;
+        font-size: 4rem;
+      }
+
+      &--text {
+        color: #fff;
+        line-height: 1.8;
+        font-size: 2rem;
+      }
+    }
+  }
+
+  &__featured {
+    max-width: 70vw;
+    margin: 0 auto;
+
+    &-grid {
+      &__gbox {
+        width: 100%;
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+        transition: all 0.2s ease;
+
+        &:hover {
+          transform: scale(1.03, 1.03);
+          box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.15);
+        }
+
+        &--link {
+          &:link,
+          &:visited {
+            text-decoration: none;
+            color: var(--color-blue-dark-1);
+          }
+        }
+
+        &--tag-group {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.6rem;
+          margin: 2.4rem 2.4rem 0;
+
+          &__tag {
+            border-radius: 4px;
+            border: 2px solid var(--color-blue-light-2);
+            color: var(--color-blue-light-2);
+            font-size: 1.4rem;
+            font-weight: 600;
+            padding: 0.4rem 1.2rem;
+          }
+        }
+
+        &--caption {
+          padding: 2.4rem;
+
+          &--title {
+            font-size: 2rem;
+          }
+        }
+
+        &--image {
+          width: 100%;
+          height: 20rem;
+
+          &__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-top-right-radius: 4px;
+            border-top-left-radius: 4px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.market-report {
+  max-width: 70vw;
+  margin: 0 auto;
+
+  &-heading--text {
+    color: var(--color-blue-dark-3);
+  }
+
+  &__stats-grid {
+    &--heading-header {
+      color: var(--color-blue-light-1);
+    }
+    &--top {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      gap: 9.6rem;
+
+      &__box {
+        background-image: linear-gradient(
+          to right bottom,
+          var(--color-blue-light-1),
+          var(--color-blue-light-2)
+        );
+        width: 100%;
+        padding: 3.6rem;
+        border-radius: 4px;
+        box-shadow: 0 1rem 2rem rgba(97, 165, 194, 0.45);
+        color: #fff;
+        text-align: center;
+
+        &-main {
+          font-size: 3.6rem;
+        }
+      }
+    }
+
+    &--prices {
+      display: grid;
+      grid-template-columns: 65% auto;
+      height: 50vh;
+      width: 70vw;
+      gap: 4.8rem;
+
+      &__graph {
+        border-radius: 4px;
+        box-shadow: 0 1rem 2rem rgba(97, 165, 194, 0.45);
+        display: inline-block;
+        position: relative;
+        height: 50vh;
+        width: 100%;
+      }
+
+      &__price-updates {
+        height: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 4.8rem;
+
+        &--current {
+          border-radius: 4px;
+          box-shadow: 0 1rem 2rem rgba(97, 165, 194, 0.45);
+          text-align: center;
+          color: var(--color-blue-light-1);
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 0.5rem;
+        }
+
+        &--text {
+          color: var(--color-blue-light-2);
+        }
+
+        &--main {
+          font-size: 3.6rem;
+        }
+      }
+    }
+
+    &--inventory {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4.8rem;
+
+      &__box {
+        border-radius: 4px;
+        box-shadow: 0 1rem 2rem rgba(97, 165, 194, 0.45);
+        height: 50vh;
+        padding: 2.4rem;
+        position: relative;
+      }
+
+      &__header {
+        text-align: center;
+      }
+
+      &--chart {
+        height: 100%;
+      }
+    }
+  }
+}

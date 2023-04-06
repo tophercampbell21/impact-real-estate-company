@@ -9,6 +9,7 @@
 @import "base/utilities";
 
 // *** COMPONENTS
+@import "components/articles";
 @import "components/buttons";
 @import "components/contact-header";
 @import "components/footer";
@@ -21,4 +22,5 @@
 
 // *** PAGES
 @import "pages/about";
+@import "pages/blog";
 @import "pages/home";
